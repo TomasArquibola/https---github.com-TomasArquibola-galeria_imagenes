@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería Responsive</title>
+  <!-- Vinculación del archivo de estilos -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <!-- Carrusel de imágenes -->
+    <main>
+        <section class="carrusel">
+          <!-- Contenedor que se moverá mediante translateX -->
+          <div class="contenedor-imagenes">
+            <img src="assets/images/img1.jpg" alt="Imagen 1">
+            <img src="assets/images/img2.jpg" alt="Imagen 2">
+            <img src="assets/images/img5.jpg" alt="Imagen 5">
+            <img src="assets/images/img3.jpg" alt="Imagen 3">
+            <img src="assets/images/img4.jpg" alt="Imagen 4">
+            <img src="assets/images/img6.png" alt="Imagen 6">
+          </div>
+          <!-- Flechas para navegación manual -->
+          <button class="flecha izquierda" id="anterior" title="Imagen Anterior">&#10094;</button>
+          <button class="flecha derecha" id="siguiente" title="Imagen Siguiente">&#10095;</button>
+        </section>
+      </main>
+    
+
+  <!-- Modal para ver la imagen en grande -->
+  <div id="modal" class="modal">
+    <span id="cerrarModal" title="Cerrar Modal">&times;</span>
+    <img class="modal-contenido" id="imagenModal" alt="Imagen Ampliada">
+  </div>
+
+  <!-- Audio de fondo -->
+  <audio id="musica" loop>
+    <source src="assets/audio/LIVING  Lofi Beats una mezcla de instrumentales relajantes para estudiar, trabajar o meditar..mp3" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+  <br>
+  <header>
+    <button id="modoOscuro" title="Alternar Modo Oscuro">Modo Oscuro</button>
+    <button id="toggleMusica" title="Reproducir/Pausar Música">Música</button>
+  </header>
+
+  <!-- Vinculación del archivo JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
